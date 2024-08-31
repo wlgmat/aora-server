@@ -50,17 +50,12 @@ h2{
         font-size: 1.2em; /* Increase font size */
         padding: 10px; /* Increase padding for better touch targets */
     }
-    .btn{
+    .form h2{
+        margin-bottom: 70px;
+    }
+    .btn {
         padding: 20px;
-        /* border: none;
-        width: 100%;
-        border-radius: 5px;
-        outline: none;
-        background-color: #3c69ca;
-        color: white;
-        font-weight: bold;
-        cursor: pointer; */
-    } 
+    }
 
 }
 
