@@ -48,7 +48,9 @@ h2{
     .btn{
         height: 20
     } 
-
+    .form h2{
+        margin-bottom: 80px;
+    }
 
 }
 
