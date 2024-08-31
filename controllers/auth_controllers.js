@@ -1,4 +1,4 @@
-import { Client,Account,ID,Functions, OAuthProvider } from 'appwrite';
+import { Client,Account,ID,Functions } from 'appwrite';
 
 const client = new Client()
 .setEndpoint('https://cloud.appwrite.io/v1') // Your API Endpoint
@@ -35,8 +35,8 @@ export const updateNewPassword = async (userId, secret, password,password_confir
 export const SignInWithGoogle = async () => {
     try {
         const result = account.createOAuth2Session(
-            OAuthProvider.Google,
-            'https://verification-and-recovery.onrender.com/sign-in-with-google',
+            'google',
+            'https://aora-server-ru5t.onrender.com/sign-in-with-google',
             ["profile", "email"]
         )
         console.log(result)
@@ -50,8 +50,8 @@ export const SignInWithGoogle = async () => {
 export const SignInWithGitHub = async () => {
     try {
         const result = account.createOAuth2Session(
-            OAuthProvider.Github, 
-            'https://verification-and-recovery.onrender.com/sign-in-with-github',
+            'github',
+            'https://aora-server-ru5t.onrender.com/sign-in-with-github',
             ["repo", 'user']
         )
         console.log(result)
