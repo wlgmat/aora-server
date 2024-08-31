@@ -43,13 +43,13 @@ h2{
     margin-bottom: 20px;
 }
 
-/* Media query for mobile devices */
+/* Media query for mobile devices
 @media only screen and (max-width: 767px) {
     .form h2{
         margin-bottom: 70px;
     }
 
-}
+} */
 
 .input-field label{
     margin-bottom: 5px;
