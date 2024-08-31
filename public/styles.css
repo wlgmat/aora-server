@@ -113,11 +113,11 @@ h2{
     .btn{
         height: 50px;
         padding-top: 30px;
-        margin-top: 20px;
+        margin-top: 10px;
         border-radius: 0px;
         font-size: 10px;
     } 
     .form {
-        margin-bottom: 70px;
+        margin-bottom: -80px;
     }
 }
