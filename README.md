@@ -1,3 +1,4 @@
+
 # Reset Password and Verify Email Node Appwrite Backend
 
 This is the simple backend that can be used to handle reset password and email verification for appwrite very easily.
@@ -25,4 +26,5 @@ with the `'<YOUR-PROJECT-ID>'` in `/controllers/auth_controller.js`.
 **Backend:** Appwrite
 
 ## 👨‍💻 Author : [@Snehasis4321](https://www.github.com/Snehasis4321)
+# My Project
 # My Project
