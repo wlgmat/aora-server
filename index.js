@@ -1,6 +1,6 @@
 import express from 'express';
 import cors from 'cors';
-import { updateNewPassword, updateVerification } from './controllers/auth_controllers.js';
+import { updateNewPassword, updateVerification, SignInWithGoogle, SignInWithGitHub } from './controllers/auth_controllers.js';
 
 const app = express()
 app.use(cors())
@@ -36,6 +36,28 @@ app.get("/recovery", (req, res) => {
     console.log("userId",userId);
     console.log("secret",secret);
     res.render("reset_password",{userId,secret,message:""});
+});
+
+app.get("/sign-in-with-google", async () => {
+
+    try{
+        const result = await SignInWithGoogle(); // Wait for updateVerification function to complete
+        console.log(result);
+    }
+    catch(e){
+        console.log("An error occurred")
+    };
+});
+
+app.get("/sign-in-with-github", async () => {
+
+    try{
+        const result = await SignInWithGitHub(); // Wait for updateVerification function to complete
+        console.log(result);
+    }
+    catch(e){
+        console.log("An error occurred")
+    };
 });
 
 // complete password reset post endpoint
