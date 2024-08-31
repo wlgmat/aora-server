@@ -45,11 +45,6 @@ h2{
 
 /* Media query for mobile devices */
 @media only screen and (max-width: 767px) {
-    .input-field {
-        width: 100%; /* Ensure it takes full width */
-        font-size: 1.2em; /* Increase font size */
-        padding: 10px; /* Increase padding for better touch targets */
-    }
     .form h2{
         margin-bottom: 70px;
     }
