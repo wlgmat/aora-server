@@ -112,9 +112,10 @@ h2{
 @media only screen and (max-width: 767px) {
     .btn{
         height: 50px;
-        padding-top: 20px;
-        margin-top: 20px;
+        padding-top: 40px;
         border-radius: 0px;
     } 
-
+    .form {
+        margin-bottom: -30px;
+    }
 }
